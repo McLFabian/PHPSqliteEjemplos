@@ -1,0 +1,100 @@
+<!-- BEGIN INIT -->
+
+<?php
+include('lib/init.php');
+include('bdd/sqlite.php');
+//include('lib/check.php'); //VERIFICA QUE ESTES CON SESION INICIADA
+
+$edo = $_SESSION['edo'];
+
+?>
+
+<!-- END INIT -->
+
+<?php
+/*
+
+   LAS VARIABLES PARA CREAR SESION LAS CAMBIE A sesion_login
+   PORQUE CADA VEZ QUE VOLIAS A PANEL SE CREABAN Y HABIA ERROR DE CACHE
+
+$edo=0;
+session_start();
+if(empty($_SESSION['nombre'])){
+  $name=$_POST['nombre'];
+  $passwd=$_POST['passwd'];
+  $usuario = new Usuarios;
+  $usuario->conn();
+  $edo = $usuario->login($name, $passwd);
+  $_SESSION['nombre']=$name;
+}
+else{
+  $edo=1;
+}
+
+  HASTA AQUI MOVI
+*/
+
+?>
+
+<!-- BEGIN MENU -->
+
+<?php include('lib/menu.php'); ?>
+
+<!-- END MENU -->
+
+<!-- BEGIN CENTER -->
+  <center>
+  <div >
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+	<img style="width:200px" src="images/formulario.png" alt="...">
+	<div class="caption">
+	  <h3>Ver Solicitudes</h3>
+	  <p>Registro de todas las solicitudes</p>
+	  <p><a href="solicitud_ver_pendientes.php" class="btn btn-primary" role="button">Gestionar Pendientes</a> <a href="listar_solicitudes.php" class="btn btn-default"   role="button">Ver Todas</a></p>
+	</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+	<img style="width:200px" src="images/fotografo.jpg" alt="...">
+	<div class="caption">  
+	  <h3>Fotografos</h3>
+	  <p>Lista de bolsa de fotografos</p>
+	  <p><a href="niveles.php" class="btn btn-primary" role="button">Gestionar fotografos</a><a href="listar_fotografos.php" class="btn btn-primary" role="button">Ver fotografos</a></p>
+	</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+	<img style="width:156px" src="images/user_foto.png" alt="...">
+	<div class="caption">
+	  <h3>Usuarios</h3>
+	  <p>Agrega usuarios al sistema</p>
+	  <p><a href="add_user_form.php" class="btn btn-primary" role="button">Agregar</a> <a href="ver_usuarios.php" class="btn btn-default"   role="button">Ver</a> <a href="borrar_usuario.php" class="btn btn-danger"   role="button">Borrar</a></p>
+	</div>
+      </div>
+    </div>  
+  </div>
+
+
+
+  </center>
+<!-- END CENTER -->
+
+<!-- BEGIN FOOTER -->
+
+<?php include('lib/footer.php'); ?>
+
+<!-- END FOOTER -->
+
+
+<!-- BEGIN BOOTSTRAP -->
+
+<?php include('lib/bootstrap.php'); ?>
+
+<!-- END BOOTSTRAP -->
+
+</html>

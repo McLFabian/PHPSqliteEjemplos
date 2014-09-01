@@ -1,0 +1,38 @@
+<center><h3>Historico Nave</h3></center>
+<center>
+<table style="width:600px" class="table table-hover">
+<tr>
+<td><b>ID Revisi&oacute;n :</b></td><td>1</td>
+</tr>
+<tr>
+<td><b>Nombre Revisor :</b></td><td>Camilo</td>
+</tr>
+<tr>
+<td><b>ID Aeronave :</b></td><td>5</td>
+</tr>
+<tr>
+<td><b>Fecha Revisi&oacute;n :</b></td><td>2014-03-31 02:03:00</td>
+</tr>
+<tr>
+<td><b>Origen :</b></td><td>UDP03</td>
+</tr>
+<tr>
+<td><b>Destino :</b></td><td>UDP00</td>
+</tr>
+</table >
+</center>
+<br><br><center><h3>Pasajeros</h3></center>
+<center>
+<table style="width:600px" class="table table-hover">
+<tr>
+<td>3</td><td>Camilo</td><td>N5@486</td><td><font color ="green">Ticket Valido</font></td>
+</tr>
+</table>
+</center>
+<center>
+<table style="width:600px" class="table table-hover">
+<tr>
+<td>11</td><td>Prudencio</td><td>N5@427</td><td><font color ="green">Ticket Valido</font></td>
+</tr>
+</table>
+</center>
